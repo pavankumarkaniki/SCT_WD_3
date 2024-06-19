@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    margin: 0;
+}
+
+.bg-container {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-waYDLLgBtOPjgvghqakRnbbelE4yhALfKw&usqp=CAU');
+    height: 98vh;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    padding-top: 10px;
+    font-size: 34px;
+    color: #04FFF2;
+    font-family: "Roboto";
+    padding-bottom: 20px;
+}
+
+.game-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #FFA1FF;
+    width: 100%;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.box {
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #EA72FF;
+    height: 80px;
+    background-color: #ffffff;
+}
+
+.status {
+    color: #FFF145;
+    font-family: "Roboto";
+    font-size: 24px;
+    padding: 10px;
+}
+
+.reset-btn {
+    background-color: #FA6727;
+    color: #ffffff;
+    font-family: "Roboto";
+    border-radius: 15px;
+    border-width: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+}
+
+@media (min-width:768px) {
+    .game-card {
+        width: 70%;
+    }
+
+    .heading {
+        font-size: 44px;
+    }
+
+    .box {
+        height: 100px;
+        padding: 30px;
+    }
+
+    .reset-btn {
+        border-radius: 15px;
+        font-size: 24px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+@media (min-width:1200px) {
+    .game-card {
+        width: 60%;
+    }
+
+    .box {
+        padding: 30px;
+        height: 150px;
+    }
+}
